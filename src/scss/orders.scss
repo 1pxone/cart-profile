@@ -1,0 +1,101 @@
+@import "_constants.scss";
+.order__products {
+    border-bottom: 1px solid $color-border;
+    border-top: 1px solid $color-border;
+    & > div{
+        background: $bg-primary;
+    }
+}
+.order__head--info > * {
+    display: block;
+    font-size: $fs-small;
+}
+.order__head--summary > * {
+    display: block;
+}
+.order__head_ {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+button.order__pay {
+    width: 100%;
+    margin: 0;
+    border: none;
+    outline: none !important;
+    background: $color-primary;
+    color: $color-dark;
+    border-radius: $border-radius;
+    padding: 2px;
+    font-size: $fs-normal;
+    margin-top: $margin;
+    cursor: pointer;
+    transition: .3s;
+    &:hover{
+        opacity: 0.8;
+    }
+}
+.order__head, .order__bottom {
+    font-size: 13px;
+    width: 100%;
+}
+.order__head--count {
+    font-size: 13px;
+    text-align: right;
+}
+.order__head--total{
+    font-size: $fs-big;
+    color: $color-light;
+    line-height: 2;
+    font-weight: $fw-ligth;
+}
+.order__head div, .order__bottom div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: $margin-half;
+}
+.order-status__indicator{
+    height: 8px;
+    width: 8px;
+
+    display: inline-block;
+    border-radius: 3rem;
+    &.order_status--new{
+        background: cornflowerblue;
+    }
+    &.order_status--processing{
+        background: cornflowerblue;
+    }
+    &.order_status--canceled{
+        background: cornflowerblue;
+    }
+    &.order_status--waitingForPayment{
+        background: cornflowerblue;
+    }
+    &.order_status--paymentInProgress{
+        background: cornflowerblue;
+    }
+    &.order_status--paymentAuthorized{
+        background: cornflowerblue;
+    }
+    &.order_status--paid{
+        background: cornflowerblue;
+    }
+    &.order_status--delivering{
+        background: cornflowerblue;
+    }
+    &.order_status--done{
+        background: cornflowerblue;
+    }
+}
+
+.order__promoCode {
+    color: white;
+    text-transform: uppercase;
+}
+.order__discount--amount, .order__delivery--cost{
+    font-size: $fs-small;
+    color: $color-light;
+    font-weight: $fw-ligth;
+}

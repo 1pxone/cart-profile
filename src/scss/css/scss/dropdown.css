@@ -1,0 +1,30 @@
+/* Dropdown */
+.rdropdown__wrapper {
+  position: relative; }
+
+.rdropdown {
+  /* padding: 15px 15px; */
+  position: absolute;
+  background: #222;
+  z-index: 9999;
+  border-radius: 0.25rem;
+  border: 1px solid #393939;
+  min-width: 255px; }
+
+.rdropdown--left {
+  left: 0; }
+
+.rdropdown--right {
+  right: 0; }
+
+.rdropdown__heading {
+  padding: 10px 10px; }
+
+.rdropdown__bottom {
+  padding: 10px; }
+
+.rdropdown__button {
+  background: none;
+  border: none;
+  outline: none !important;
+  cursor: pointer; }

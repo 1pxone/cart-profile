@@ -1,0 +1,10 @@
+@import "_constants.scss";
+.recipient__wrapper {
+    display: flex;
+    align-items: center;
+    & span{
+        display: block;
+        margin-right: $margin;
+        font-size: $fs-small;
+    }
+}

@@ -1,0 +1,93 @@
+/* cart */
+@import "_constants.scss";
+.cart-side__total{
+    text-align: center;
+}
+.cart-side__total p {
+    white-space: nowrap;
+    margin-bottom: $margin;
+    font-size: $fs-bigger;
+}
+.cart-side__total-wrapper {
+    // text-align: center;
+    padding: $padding;
+}
+span.cart-side__product-count {
+    margin-bottom: $margin;
+    display: block;
+    // text-align: left;
+    font-size: 13px;
+    color: $text-default;
+}
+
+span.cart-side {
+    &__discount, &__subtotal, &__delivery{
+        font-size: $fs-small;
+        display: flex;
+        justify-content: space-between;
+        // margin-bottom: $margin;
+        align-items: flex-end;
+        &--amount{
+            font-size: $fs-small;
+            color: $text-default;
+        }
+    }
+     &__total{
+         font-size: $fs-small;
+         display: flex;
+         justify-content: space-between;
+         // margin-bottom: $margin;
+         margin-top: $margin;
+         align-items: flex-end;
+         align-items: center;
+         & span{
+             text-align: left;
+         }
+         &--amount{
+             font-size: $fs-huge;
+             color: $text-default;
+             line-height: 1;
+             white-space: nowrap;
+         }
+
+     }
+
+}
+.cart-side__border {
+    border-bottom: $border-dotted;
+    width: 100%;
+    margin-left: $margin-half;
+    margin-right: $margin-half;
+}
+.cart-side__wrapper {
+    background: $bg-primary;
+    border-radius: $border-radius;
+    margin-bottom: $margin;
+    border: $border-solid;
+}
+.cart-side__products  {
+    border-top: 1px solid $color-border;
+    border-bottom: 1px solid $color-border;
+}
+// .cart-side__products .cart-product-mini__wrapper {
+//     background: white;
+// }
+.cart-side.cart-side--purchase span {
+    margin-bottom: 0;
+}
+.cart-side--cart {
+    display: flex;
+    flex-direction: column;
+}
+// .process-order__wrapper {
+//     padding: 0 $padding $padding $padding;
+// }
+@media (max-width: 991px){
+    .cart-side--cart {
+        display: flex;
+        flex-direction: column-reverse !important;
+    }
+    .cart-side--purchase {
+        display: none;
+    }
+}

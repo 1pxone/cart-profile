@@ -1,0 +1,51 @@
+@import "_constants.scss";
+.deliveryType * {
+    display: block;
+    flex-basis: 50%;
+    text-align: center;
+    padding: 5px 10px;
+    cursor: pointer;
+    &:first-child{
+        border-radius: $border-radius 0 0 $border-radius;
+    }
+    &:last-child{
+        border-radius: 0 $border-radius $border-radius 0;
+    }
+    &.active{
+        color: $color-dark;
+        background: $color-primary;
+    }
+    &.unactive{
+        color: $text-default;
+        background: $bg-primary;
+        transition: .3s;
+        &:hover{
+            color: $text-brand;
+        }
+    }
+    font-size: $fs-small;
+}
+.delivery__heading {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+.deliveryType {
+    display: flex;
+    justify-content: space-between;
+}
+@media (max-width: 991px){
+    .delivery__heading {
+        display: block;
+        & span{
+            margin-right: 10px;
+        }
+    }
+    .deliveryType {
+        margin-bottom: 10px;
+    }
+
+}
+.addressesWrapper , .deliveryMethodsWrapper{
+    margin-bottom: $margin;
+}

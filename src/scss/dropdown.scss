@@ -1,0 +1,34 @@
+/* Dropdown */
+@import "_constants.scss";
+.rdropdown__wrapper {
+    position: relative;
+}
+.rdropdown {
+    /* padding: 15px 15px; */
+    position: absolute;
+    background: $bg-primary;
+    z-index: 9999;
+    border-radius: $border-radius;
+    // box-shadow: $def-shadow;
+    border: 1px solid $color-border;
+    min-width: 255px;
+}
+.rdropdown--left {
+    left: 0;
+}
+.rdropdown--right {
+    right: 0;
+}
+.rdropdown__heading {
+    padding: 10px 10px;
+    // text-align: center;
+}
+.rdropdown__bottom {
+    padding: 10px;
+}
+.rdropdown__button{
+    background: none;
+    border: none;
+    outline: none !important;
+    cursor: pointer;
+}

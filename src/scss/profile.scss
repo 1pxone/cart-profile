@@ -1,0 +1,120 @@
+@import "_constants.scss";
+.profile__info {
+    & span{
+        display: block;
+        text-align: center;
+    }
+    &--name{
+        font-size: $fs-normal;
+    }
+    &--phone{
+        font-size: $fs-small;
+        color: $color-halfdark;
+    }
+    &--email{
+        font-size: $fs-small;
+        color: $color-halfdark;
+    }
+}
+.profile__nav {
+    margin-top: $margin;
+    border-bottom:  $border-solid;
+    border-top:  $border-solid;
+    padding: $padding 0;
+}
+.profile__navLink {
+    display: block;
+    color: $text-light;
+    // height: 42px;
+    font-size: $fs-normal;
+    font-weight:  $fw-ligth;
+    // border-top: $border-solid;
+    // border-bottom:  $border-solid;
+    padding: $padding 0;
+    // padding-top: 10px;
+    // padding-left: 15px;
+    transition: .3s;
+    &--active{
+        color: $color-primary;
+    }
+    &:hover{
+        text-decoration: none;
+        color: $color-primary;
+    }
+}
+.userIcon--icon {
+    font-size: $fs-big;
+    color: $text-default;
+}
+span.profileData__wrapper {
+    display: flex;
+    justify-content: space-between;
+    font-size: $fs-small;
+}
+span.profileData__value {
+    color: $text-default;
+}
+
+.profileDropdown__nav a {
+    display: block;
+    text-align: center;
+    padding: $padding;
+    text-decoration: none !important;
+    color: $text-light;
+    font-size: $fs-small;
+    background: none;
+    transition: .3s;
+    &:hover{
+        color: $text-brand;
+        background: black;
+    }
+}
+.profileDropdown__info {
+    padding: 10px;
+    text-align: center;
+    border-bottom: $border-solid;
+
+    & span {
+        font-size: $fs-normal;
+        color: $text-default;
+        font-weight: 100;
+        display: block;
+    }
+}
+.profileDropdown__bottom {
+    padding: $padding;
+    border-top: $border-solid;
+    & .profileDropdown--logout {
+        border: none;
+        outline: none !important;
+        background: none;
+        font-size: $fs-small;
+        cursor: pointer;
+        color: $text-light;
+        transition: .3s;
+        &:hover{
+            opacity: 0.8;
+        }
+    }
+}
+.profile__nav--bottom {
+    margin-top: $margin;
+    // text-align: center;
+    // padding-left: 10px;
+    & .profile__nav--logout {
+        border: none;
+        outline: none !important;
+        background: none;
+        font-size: $fs-small;
+        cursor: pointer;
+        color: $text-light;
+        padding: 0;
+        transition: .3s;
+        &:hover{
+            opacity: 0.8;
+        }
+    }
+}
+section.dashBlock{
+    margin-bottom: $margin;
+}

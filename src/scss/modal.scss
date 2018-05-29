@@ -1,0 +1,52 @@
+/* Modal */
+@import "_constants.scss";
+.rmodal {
+    position: fixed;
+    background: $modal-overlay-bg;
+    margin: auto 0;
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    padding: 30px 15px 0 15px;
+    z-index: 99999;
+    display: block;
+    overflow: auto;
+    &__header{
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        color: $text-default;
+        padding: $padding;
+    }
+    &__content{
+        padding: $padding;
+        height: 100%;
+    }
+    &__close{
+        font-size: 32px;
+        padding: 0;
+        margin: 0;
+        line-height: 0;
+        color: $color-danger;
+        cursor: pointer;
+        outline: none !important;
+        border: none;
+        background: none;
+        font-weight: $fw-ligth;
+    }
+    &__inner{
+        background: $bg-primary;
+        width: 100%;
+        margin: auto;
+        max-width: 400px;
+        margin-bottom: 30vh;
+        border-radius: $border-radius;
+        box-shadow: $def-shadow;
+        &--big{
+            max-width: 740px;
+            height: 600px;
+        }
+    }
+}

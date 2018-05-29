@@ -1,0 +1,17 @@
+.img--adaptive{
+    max-width: 100%;
+    height: auto;
+}
+.isPatching {
+    opacity: 0.8;
+    pointer-events: none;
+}
+body.noScroll {
+    overflow: hidden;
+}
+.display-block{
+    display: block;
+}
+.display-flex{
+    display: flex;
+}

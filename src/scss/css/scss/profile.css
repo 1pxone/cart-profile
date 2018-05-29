@@ -1,0 +1,99 @@
+.profile__info span {
+  display: block;
+  text-align: center; }
+
+.profile__info--name {
+  font-size: 16px; }
+
+.profile__info--phone {
+  font-size: 13px;
+  color: #888; }
+
+.profile__info--email {
+  font-size: 13px;
+  color: #888; }
+
+.profile__nav {
+  margin-top: 10px;
+  border-bottom: 1px solid #393939;
+  border-top: 1px solid #393939;
+  padding: 10px 0; }
+
+.profile__navLink {
+  display: block;
+  color: #d0d0d0;
+  font-size: 16px;
+  font-weight: 300;
+  padding: 10px 0;
+  transition: .3s; }
+  .profile__navLink--active {
+    color: #44d62c; }
+  .profile__navLink:hover {
+    text-decoration: none;
+    color: #44d62c; }
+
+.userIcon--icon {
+  font-size: 18px;
+  color: #ffffff; }
+
+span.profileData__wrapper {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px; }
+
+span.profileData__value {
+  color: #ffffff; }
+
+.profileDropdown__nav a {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none !important;
+  color: #d0d0d0;
+  font-size: 13px;
+  background: none;
+  transition: .3s; }
+  .profileDropdown__nav a:hover {
+    color: #44d62c;
+    background: black; }
+
+.profileDropdown__info {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #393939; }
+  .profileDropdown__info span {
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 100;
+    display: block; }
+
+.profileDropdown__bottom {
+  padding: 10px;
+  border-top: 1px solid #393939; }
+  .profileDropdown__bottom .profileDropdown--logout {
+    border: none;
+    outline: none !important;
+    background: none;
+    font-size: 13px;
+    cursor: pointer;
+    color: #d0d0d0;
+    transition: .3s; }
+    .profileDropdown__bottom .profileDropdown--logout:hover {
+      opacity: 0.8; }
+
+.profile__nav--bottom {
+  margin-top: 10px; }
+  .profile__nav--bottom .profile__nav--logout {
+    border: none;
+    outline: none !important;
+    background: none;
+    font-size: 13px;
+    cursor: pointer;
+    color: #d0d0d0;
+    padding: 0;
+    transition: .3s; }
+    .profile__nav--bottom .profile__nav--logout:hover {
+      opacity: 0.8; }
+
+section.dashBlock {
+  margin-bottom: 10px; }

@@ -1,0 +1,14 @@
+.auth_wrapper {
+  justify-content: space-evenly;
+  margin-top: 10vh; }
+
+.auth__toggle {
+  margin-top: 15px; }
+
+form.login__form {
+  margin-bottom: 30px; }
+
+@media (max-width: 991px) {
+  .auth_wrapper {
+    justify-content: space-evenly;
+    margin-top: 0; } }

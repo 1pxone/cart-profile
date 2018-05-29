@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="theme-color" content="#000000">
+        <!--
+            manifest.json provides metadata used when your web app is added to the
+            homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+            -->
+        <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+        <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;subset=cyrillic" rel="stylesheet"> -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&amp;subset=cyrillic" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+        <title>React App</title>
+    </head>
+    <body>
+        <noscript>
+            You need to enable JavaScript to run this app.
+        </noscript>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <div id="r-app-heading"></div>
+                <div class="addToCart__button" data-sku="JR0501"></div>
+                <!-- <div class="addToCart__button" data-sku="JR1601"></div> -->
+                <div id="userIcon"></div>
+                <div id="cartIcon"></div>
+            </div>
+        </nav>
+
+        <div id="profilePage"></div>
+
+        <div id="cartPage"></div>
+
+        <style>
+            .footer{
+                min-height: 30vh;
+                background: #222!important;
+                width: 100%;
+                margin-top: 10vh;
+            }
+            .bg-light {
+                background-color: #222222!important;
+            }
+        </style>
+        <script>
+            // this global var must be added on each product buying page or catalog page with buying option. Watch out console warnings!
+            window.productdata = [{
+                availability: "InStock", // Discontinued, InStoreOnly, LimitedAvailability, OnlineOnly, OutOfStock, PreOrder, PreSale, SoldOut
+                btntext: "В корзину",
+                sku: "JR0501",
+                qty: 1,
+                title: "BlackWidow Tournament Chroma V2 (Green Switch)",
+                image: "https://static.razerzone.ru/razer-blackwidow-chroma-v2/img/razer-blackwidow-chroma-switcher.png",
+                link: "http://localhost/products/tankbot-kit/"
+            },{
+                availability: "InStock", // Discontinued, InStoreOnly, LimitedAvailability, OnlineOnly, OutOfStock, PreOrder, PreSale, SoldOut
+                btntext: "Купить",
+                sku: "JR1601",
+                qty: 1,
+                title: "Jimu Inventor Kit",
+                image: "https://static.rapoo.pro/rapoo/cache/600x600/uploads/media/default/0001/01/12af9cc251cee9d9b91e7feed28f2e8053868a41.png",
+                link: "http://localhost/products/inventor-kit/"
+            }]
+        </script>
+    </body>
+</html>

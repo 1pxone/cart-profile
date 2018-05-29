@@ -1,0 +1,86 @@
+.order__products {
+  border-bottom: 1px solid #393939;
+  border-top: 1px solid #393939; }
+  .order__products > div {
+    background: #222; }
+
+.order__head--info > * {
+  display: block;
+  font-size: 13px; }
+
+.order__head--summary > * {
+  display: block; }
+
+.order__head_ {
+  display: flex;
+  justify-content: space-between;
+  width: 100%; }
+
+button.order__pay {
+  width: 100%;
+  margin: 0;
+  border: none;
+  outline: none !important;
+  background: #44d62c;
+  color: #000000;
+  border-radius: 0.25rem;
+  padding: 2px;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: .3s; }
+  button.order__pay:hover {
+    opacity: 0.8; }
+
+.order__head, .order__bottom {
+  font-size: 13px;
+  width: 100%; }
+
+.order__head--count {
+  font-size: 13px;
+  text-align: right; }
+
+.order__head--total {
+  font-size: 18px;
+  color: #ffffff;
+  line-height: 2;
+  font-weight: 300; }
+
+.order__head div, .order__bottom div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px; }
+
+.order-status__indicator {
+  height: 8px;
+  width: 8px;
+  display: inline-block;
+  border-radius: 3rem; }
+  .order-status__indicator.order_status--new {
+    background: cornflowerblue; }
+  .order-status__indicator.order_status--processing {
+    background: cornflowerblue; }
+  .order-status__indicator.order_status--canceled {
+    background: cornflowerblue; }
+  .order-status__indicator.order_status--waitingForPayment {
+    background: cornflowerblue; }
+  .order-status__indicator.order_status--paymentInProgress {
+    background: cornflowerblue; }
+  .order-status__indicator.order_status--paymentAuthorized {
+    background: cornflowerblue; }
+  .order-status__indicator.order_status--paid {
+    background: cornflowerblue; }
+  .order-status__indicator.order_status--delivering {
+    background: cornflowerblue; }
+  .order-status__indicator.order_status--done {
+    background: cornflowerblue; }
+
+.order__promoCode {
+  color: white;
+  text-transform: uppercase; }
+
+.order__discount--amount, .order__delivery--cost {
+  font-size: 13px;
+  color: #ffffff;
+  font-weight: 300; }

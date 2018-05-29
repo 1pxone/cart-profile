@@ -1,0 +1,117 @@
+@import "_constants.scss";
+.r-btn-default{
+    background: $color-primary;
+    color: $color-dark;
+    display: block;
+    border-radius: $border-radius;
+    border: none;
+    padding: $padding-half $padding;
+    outline: none !important;
+    cursor: pointer;
+    transition: .3s;
+    text-decoration: none !important;
+    text-align: center;
+    &:hover{
+        opacity: 0.8;
+        color: $color-dark;
+    }
+}
+.r-btn-secondary {
+    padding: 0;
+    line-height: 1;
+    background: none;
+    border: none;
+    color: $text-light !important;
+    outline: none !important;
+    cursor: pointer;
+    transition: .3s;
+    text-decoration: none !important;
+    text-align: center;
+    &:hover{
+        opacity: 0.8;
+    }
+}
+.w-full{
+    width: 100%;
+}
+.fs-small{
+    font-size: $fs-small;
+}
+
+.cart-step__nextbtn-wrapper a {
+    background: $color-primary;
+    color: $color-light;
+    display: block;
+    border-radius: $border-radius;
+    padding: $padding-half;
+    &:hover{
+        color: $color-light;
+    }
+}
+.cart-step__nextbtn-wrapper {
+    margin-top: $margin;
+    text-align: center;
+    width: 100%;
+}
+.process-order {
+    background: $color-primary;
+    color: $color-dark;
+    // font-weight: $fw-ligth;
+    display: block;
+    border-radius: $border-radius;
+    border: none;
+    width: 100%;
+    padding: $padding-half;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none !important;
+    transition: .3s;
+    outline: none !important;
+    &:hover{
+        opacity: 0.8;
+        color: $color-dark;
+    }
+}
+.process-order__wrapper {
+    margin-top: $margin;
+}
+.process-order--blockers span {
+    font-size: $fs-small;
+    color: $text-default;
+    background: #cb0000;
+    display: block;
+    padding: $padding-half;
+    border-radius: 3px;
+    margin-bottom: $margin-half !important;
+}
+.process-order.process-order--disabled {
+    opacity: 0.5;
+}
+.change__button{
+    color: $text-light;
+    font-size: $fs-small;
+    border: none;
+    border-bottom: 1px dotted $text-light;
+    transition: .3s;
+    cursor: pointer;
+    background: none;
+    text-decoration: none !important;
+    outline: none !important;
+    &:hover{
+        color: $text-default;
+    }
+}
+.otherAddresses__button{
+    background: none;
+    border-radius: 3px;
+    border: none;
+    width: 100%;
+    color: $text-brand;
+    font-size: $fs-small;
+    outline: none !important;
+    cursor: pointer;
+    transition: .3s;
+    &:hover{
+        opacity: 0.8;
+    }
+}

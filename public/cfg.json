@@ -1,0 +1,116 @@
+{
+    "rootPath": "/account",
+    "cartRootPath": "/cart",
+    "title": "Личный кабинет",
+    "containerClass":"container",
+    "navClass":"col-12 col-md-3 mb-3",
+    "usericon": {
+        "classname": "fa fa-user-o userIcon--icon "
+    },
+    "carticon": {
+        "classname": "fa fa-shopping-bag cartIcon--icon"
+    },
+    "privacyPolicyLink": "/company/privacy-policy",
+    "modules": [
+        {
+            "name": "Dashboard",
+            "title": "Панель управления",
+            "path": "",
+            "component": "Dashboard"
+        },
+        {
+            "name": "Orders",
+            "title": "Заказы",
+            "path": "/orders",
+            "component": "Orders"
+        },
+        {
+            "name": "Profile settings",
+            "title": "Настройки",
+            "path": "/settings",
+            "component": "Profile"
+        },
+        {
+            "name": "Addresses",
+            "title": "Адреса доставок",
+            "path": "/addresses",
+            "component": "Addresses"
+        },
+        {
+            "name": "Newsletter",
+            "title": "Уведомления и рассылки",
+            "path": "/subscribe",
+            "component": "Subscribe"
+        }
+    ],
+    "dashboard": [
+        {
+            "name": "Orders",
+            "title": "Заказы",
+            "component": "OrdersDash",
+            "className": "dashBlock col-12 mb-3"
+        },
+        {
+            "name": "Profile",
+            "title": "Аккаунт",
+            "component": "ProfileDash",
+            "className": "dashBlock col-12 mb-3"
+        },
+        {
+            "name": "Addresses",
+            "title": "Адреса доставок",
+            "component": "AddressesDash",
+            "className": "dashBlock col-12 mb-3"
+        },
+        {
+            "name": "Subscribe",
+            "title": "Подписка на новости",
+            "component": "SubscribeDash",
+            "className": "dashBlock col-12 mb-3"
+        }
+    ],
+    "all_modules": [
+        {
+            "name": "Dashboard",
+            "title": "Панель управления",
+            "path": "",
+            "component": "Dash"
+        },
+        {
+            "name": "Orders",
+            "title": "Заказы",
+            "path": "/orders",
+            "component": "Orders"
+        },
+        {
+            "name": "Wish list",
+            "title": "Списки желаний",
+            "path": "/wishlist",
+            "component": "Wishlist"
+        },
+        {
+            "name": "Saved carts",
+            "title": "Сохраненные корзины",
+            "path": "/saved-carts",
+            "component": "SavedCarts"
+        },
+        {
+            "name": "Addresses",
+            "title": "Адреса доставок",
+            "path": "/addresses",
+            "component": "Addresses"
+        },
+        {
+            "name": "Profile settings",
+            "title": "Настройки",
+            "path": "/settings",
+            "component": "Profile"
+        },
+        {
+            "name": "Newsletter",
+            "title": "Уведомления и рассылки",
+            "path": "/subscribe",
+            "component": "Subscribe"
+        }
+    ]
+}

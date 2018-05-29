@@ -1,0 +1,33 @@
+.finalBlock__wrapper {
+  justify-content: flex-end; }
+
+.finalBlock__summary {
+  margin-top: 10px; }
+
+.finalBlock__products {
+  background: #222;
+  border-radius: 0.25rem;
+  margin-bottom: 10px;
+  border: 1px solid #393939; }
+
+.finalBlock__heading {
+  padding: 10px; }
+  .finalBlock__heading span {
+    font-size: 13px;
+    color: #ffffff; }
+
+.finalBlock__delimeter {
+  margin-bottom: 40px;
+  border-bottom: 1px solid #44d62c; }
+
+.finalBlock__productsWrapper {
+  border-top: 1px solid #393939;
+  padding-bottom: 3px;
+  background: black; }
+
+.finalblock__promo {
+  display: none; }
+
+@media (max-width: 991px) {
+  .finalblock__promo {
+    display: block; } }

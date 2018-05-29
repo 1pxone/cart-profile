@@ -1,0 +1,19 @@
+.delivery__heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between; }
+
+.deliveryType {
+  display: flex;
+  justify-content: space-between; }
+
+@media (max-width: 991px) {
+  .delivery__heading {
+    display: block; }
+    .delivery__heading span {
+      margin-right: 10px; }
+  .deliveryType {
+    margin-bottom: 10px; } }
+
+.addressesWrapper, .deliveryMethodsWrapper {
+  margin-bottom: 10px; }

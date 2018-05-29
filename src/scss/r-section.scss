@@ -1,0 +1,41 @@
+@import "_constants.scss";
+.r-section {
+    margin-bottom: 30px;
+}
+.r-secction__heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: $margin;
+}
+.map__heading {
+    &--text {
+        flex-basis: 80%;
+        flex-grow: 1;
+    }
+    & select{
+        width: 300px;
+    }
+}
+
+span.r-section__title {
+    font-size: 22px;
+    display: block;
+    margin-bottom: 10px;
+    color: $text-brand;
+    font-weight: $fw-ligth;
+    transition: .3s;
+    &--disabled{
+        opacity: .5;
+    }
+}
+.r-section__subtitle {
+    font-size: 18px;
+    color: white;
+    font-weight: 100;
+
+    display: block;
+}
+.r-subsection {
+    margin-bottom: 20px;
+}

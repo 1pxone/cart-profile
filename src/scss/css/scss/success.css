@@ -1,0 +1,16 @@
+.payment__iframe {
+  width: 719px;
+  height: 600px;
+  border: none;
+  margin-top: 10px; }
+
+span.order__success {
+  font-size: 18px;
+  color: #d0d0d0;
+  font-weight: 300;
+  display: block; }
+
+span.order__success--id {
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 400; }

@@ -1,0 +1,45 @@
+/* Modal */
+.rmodal {
+  position: fixed;
+  background: rgba(88, 88, 88, 0.85);
+  margin: auto 0;
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  padding: 30px 15px 0 15px;
+  z-index: 99999;
+  display: block;
+  overflow: auto; }
+  .rmodal__header {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    color: #ffffff;
+    padding: 10px; }
+  .rmodal__content {
+    padding: 10px;
+    height: 100%; }
+  .rmodal__close {
+    font-size: 32px;
+    padding: 0;
+    margin: 0;
+    line-height: 0;
+    color: #ff8181;
+    cursor: pointer;
+    outline: none !important;
+    border: none;
+    background: none;
+    font-weight: 300; }
+  .rmodal__inner {
+    background: #222;
+    width: 100%;
+    margin: auto;
+    max-width: 400px;
+    margin-bottom: 30vh;
+    border-radius: 0.25rem;
+    box-shadow: 0 2px 20px 0px rgba(0, 0, 0, 0.12); }
+    .rmodal__inner--big {
+      max-width: 740px;
+      height: 600px; }

@@ -1,0 +1,105 @@
+.ymaps-2-1-60-balloon {
+  box-shadow: none !important; }
+
+div#map-basics div {
+  width: calc(100% - 1px) !important; }
+
+button.address-pvz__choose {
+  background: #349bf7;
+  color: white;
+  border-radius: 3em;
+  border: none;
+  margin-top: 10px; }
+
+button.address-pvz__choose label {
+  margin: 0;
+  padding: 0; }
+
+.sdAddress__wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-top: 10px; }
+
+.sdAddress__data span {
+  display: block;
+  font-size: 13px; }
+
+.sdAddress__mapImage {
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+  width: 140px !important;
+  height: 140px !important;
+  border-radius: 70px;
+  flex-basis: 140px;
+  flex-shrink: 0;
+  margin-left: 10px;
+  position: relative;
+  cursor: pointer;
+  filter: grayscale(100%);
+  transition: .3s; }
+  .sdAddress__mapImage:hover {
+    filter: grayscale(0%); }
+
+.sdAddress__heading {
+  margin-bottom: 10px; }
+  .sdAddress__heading--amount {
+    color: #44d62c; }
+
+.sdAddress__pointOnMap {
+  position: absolute;
+  background: url(https://cdn.freebiesupply.com/logos/large/2x/razer-logo-png-transparent.png);
+  height: 140px;
+  width: 140px;
+  display: block;
+  background-position: center;
+  background-size: 40px;
+  margin-left: auto;
+  background-repeat: no-repeat;
+  margin-right: auto;
+  filter: grayscale(0) !important; }
+
+.sdAddress__change {
+  color: #d0d0d0;
+  font-size: 13px;
+  border-bottom: 1px dotted #d0d0d0;
+  transition: .3s;
+  cursor: pointer;
+  display: initial !important; }
+  .sdAddress__change:hover {
+    color: #ffffff; }
+
+.sdAddress--patching {
+  opacity: 0.9;
+  pointer-events: none; }
+
+.sdAddress__select--button {
+  background: #44d62c;
+  color: #000000;
+  display: block;
+  border-radius: 0.25rem;
+  border: none;
+  padding: 5px 10px;
+  outline: none !important;
+  cursor: pointer;
+  transition: .3s;
+  width: 100%; }
+  .sdAddress__select--button:hover {
+    opacity: 0.8;
+    color: #000000; }
+
+@media (max-width: 900px) {
+  .sdAddress__wrapper {
+    width: 100%; }
+  .sdAddress__mapImage {
+    width: 100px !important;
+    height: 100px !important;
+    border-radius: 50px;
+    flex-basis: 100px; }
+  .sdAddress__pointOnMap {
+    height: 100px;
+    width: 100px;
+    background-size: 25px; } }

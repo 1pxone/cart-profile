@@ -1,0 +1,18 @@
+@import "_constants.scss";
+.payment__iframe{
+    width: 719px;
+    height: 600px;
+    border: none;
+    margin-top: 10px;
+}
+span.order__success {
+    font-size: 18px;
+    color: $text-light;
+    font-weight: 300;
+    display: block;
+}
+span.order__success--id {
+    font-size: 18px;
+    color: $color-light;
+    font-weight: $fw-regular;
+}

@@ -1,0 +1,39 @@
+@import "_constants.scss";
+.addToCart__modalControls {
+    margin-top: $margin;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    & * {
+        border: none;
+        background: $color-primary;
+        color: $color-light;
+        border-radius: $border-radius;
+        padding: $padding-half $padding;
+        margin-top: $margin;
+        transition: .3s;
+    }
+}
+button.addToCart__button {
+    background: #44d62c;
+    color: #000000;
+    display: block;
+    border-radius: 0.25rem;
+    border: none;
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none !important;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    outline: none !important;
+    &:hover{
+        opacity: 0.8;
+    }
+    &--isPatching{
+        opacity: 0.8;
+        pointer-events: none;
+    }
+}

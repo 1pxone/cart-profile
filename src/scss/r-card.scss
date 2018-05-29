@@ -1,0 +1,218 @@
+/* React card */
+@import "_constants.scss";
+.rcard-head__control {
+    background: none;
+    border: 0;
+    font-size: 18px;
+    color: #9494ff;
+    cursor: pointer;
+    transform: rotate(90deg);
+    letter-spacing: 5px;
+    display: block;
+    text-align: center !important;
+    margin-top: 5px;
+}
+
+.rcard-wrapper {
+    margin-bottom: $margin;
+    width: 100%;
+    transition: .3s;
+    border-radius: $border-radius;
+    border: 1px solid $color-border;
+}
+.rcard-wrapper button:focus {
+    outline: 0px dotted;
+    outline: 0px auto -webkit-focus-ring-color;
+}
+.rcard-head {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    position: relative;
+    flex-direction: column;
+    flex-basis: 10%;
+    padding: 0 8px 0 0;
+}
+.rcard-head  h6{
+    margin-bottom: 0;
+}
+.rcard-inner {
+    background: $bg-primary;
+    border-radius: .1rem;
+    // cursor: pointer;
+    transition: .5s ease;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.rcard__title {
+    font-size: $fs-normal;
+    color: $text-default;
+    font-weight: $fw-ligth;
+    // margin-bottom: $margin;
+    line-height: 1.2;
+    display: flex;
+    align-items: center;
+}
+.rcard__price {
+    color: $text-brand;
+}
+.rcard__decription {
+    font-size: $fs-small;
+    line-height: 1.5;
+    display: block;
+}
+
+.rcard__more {
+    color: $text-light;
+    font-size: $fs-small;
+    // font-weight: $fw-ligth;
+    border-bottom: 1px dotted $text-light;
+    transition: .3s;
+    cursor: pointer;
+    &:hover{
+        color: $text-default;
+    }
+}
+
+.rcard-content__image {
+    width: 40px;
+    margin-right: 10px;
+}
+.rcard__label{
+    cursor: pointer;
+}
+
+.rcard-toggle {
+    text-align: right;
+    margin: auto 0;
+    line-height: 0;
+    margin-left: $margin;
+}
+.rcard-content__wrapper {
+    flex-basis: 90%;
+    transition: 0.5s ease;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+}
+.rcard-content__wrapper.controls-active {
+    opacity: 0.3;
+}
+.rcard-head__title {
+    padding: 5px 10px 5px 10px;
+}
+.rcard-head__control-wrapper {
+    position: relative;
+    margin-right: 10px;
+    margin: 0;
+    text-align: center;
+    flex-basis: 10%;
+    display: flex;
+    align-items: center;
+}
+.rcard-head__control-dropdown {
+    position: absolute;
+    background: white;
+    width: 140px;
+    top: 28px;
+    right: 10px;
+    border-radius: .25rem;
+    border: 1px solid #eaeaea;
+    z-index: 777;
+}
+.rcard-head__control-dropdown.hide {
+    display: none;
+}
+.rcard-head__control-dropdown.show {
+    display: block;
+}
+.rcard-head__control-dropdown button {
+    background: none;
+    border: 0;
+}
+.rcard-head__control-dropdown button {
+    width:100%;
+    font-size: 14px;
+    transition: .5s ease;
+}
+.rcard-head__control-dropdown button:hover {
+    background-color: #f0f0f0;
+}
+.rcard-content p {
+    margin-bottom: 0;
+    line-height: 1.3;
+}
+label.rcard-toggle__label {
+    margin: auto 0;
+}
+.rcard-toggle input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+}
+.rcard-toggle input[type="radio"] + .rcard-toggle__label:before {
+   content: '';
+   background: $bg-secondary;
+   border-radius: 100%;
+   display: inline-block;
+   width: 26px;
+   height: 26px;
+   position: relative;
+   cursor: pointer;
+   text-align: center;
+   -webkit-transition: background .5s ease;
+   -o-transition: background .5s ease;
+   transition: background .5s ease;
+   border: 3px solid $bg-secondary;
+}
+.rcard-toggle input[type="radio"]:checked + .rcard-toggle__label:before {
+  background-color: $color-primary;
+}
+.rcard-wrapper:hover .rcard-toggle input[type="radio"] + .rcard-toggle__label:before {
+    background: $color-primary;
+}
+.rcard-toggle.hide {
+    display: none;
+}
+.rcard-wrapper.rcard__patching {
+    opacity: 0.8;
+    pointer-events: none;
+}
+.rcard-bottom__toggle__toggle {
+    text-align: center;
+}
+.rcard-bottom__toggle button {
+    padding: 0;
+    background: none;
+    border: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #349bf7;
+    width: 100%;
+    font-size: 14px;
+}
+
+
+
+
+.rcard-content__item {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 5px 10px;
+    background: #f8f8f8;
+    align-items: center;
+}
+.rcard-content__item-image {
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    background-position: 50%;
+    border-radius: 50%;
+}
+.rcard-content__item-title {
+    line-height: 1;
+    font-size: 13px;
+}

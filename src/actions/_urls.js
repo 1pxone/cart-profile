@@ -1,0 +1,15 @@
+export var url_recipients =          "/ajax/v1/user/recipient";
+export var url_cart =                "/ajax/v1/cart";
+export var url_delivery_methods =    "/ajax/v1/cart/delivery-methods";
+export var url_payment_methods =     "/ajax/v1/cart/payment-methods";
+export var url_orders =              "/ajax/v1/orders";
+export var url_user =                "/ajax/v1/user";
+export var url_address =             "/ajax/v1/user/address";
+export var url_user_password =       "/ajax/v1/user/password";
+export var url_user_resetpass =      "/resetting/send-email";
+export var url_login =               "/login_check";
+export var url_register =            "/register/";
+export var url_order =               "/ajax/v1/orders";
+export var url_saved_carts =         "/ajax/v1/user/saved-carts";
+export var url_wishlist =            "/ajax/v1/user/wishlist";
+export var url_uniteller =           "/uniteller/payment-url/";

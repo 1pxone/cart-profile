@@ -1,0 +1,126 @@
+@import "_constants.scss";
+.ymaps-2-1-60-balloon {
+    box-shadow: none !important;
+}
+div#map-basics div {
+    width: calc(100% - 1px) !important;
+}
+
+button.address-pvz__choose {
+    background: #349bf7;
+    color: white;
+    border-radius: 3em;
+    border: none;
+    margin-top: 10px;
+}
+button.address-pvz__choose label{
+    margin: 0;
+    padding: 0;
+}
+
+.sdAddress {
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+        width: 70%;
+        align-items: center;
+        margin-bottom: $margin;
+        margin-top: $margin;
+    }
+    &__data span{
+        display: block;
+        font-size: 13px;
+    }
+    &__mapImage {
+        background-repeat: no-repeat;
+        background-position: 50%;
+        background-size: cover;
+        width: 140px !important;
+        height: 140px !important;
+        border-radius: 70px;
+        flex-basis: 140px;
+        flex-shrink: 0;
+        margin-left: $margin;
+        position: relative;
+        cursor: pointer;
+        filter: grayscale(100%);
+        transition: .3s;
+        &:hover{
+            filter: grayscale(0%);
+        }
+    }
+    &__heading {
+        // font-size: $fs-normal;
+        // font-weight: $fw-ligth;
+        // color: $color-light;
+        margin-bottom: $margin;
+        &--amount{
+            color: $text-brand;
+        }
+    }
+    &__pointOnMap {
+        position: absolute;
+        background: url(https://cdn.freebiesupply.com/logos/large/2x/razer-logo-png-transparent.png);
+        height: 140px;
+        width: 140px;
+        display: block;
+        background-position: center;
+        background-size: 40px;
+        margin-left: auto;
+        background-repeat: no-repeat;
+        margin-right: auto;
+        filter: grayscale(0) !important;
+    }
+    &__change {
+        color: $text-light;
+        font-size: $fs-small;
+        border-bottom: 1px dotted $text-light;
+        transition: .3s;
+        cursor: pointer;
+        display: initial !important;
+        &:hover{
+            color: $text-default;
+        }
+    }
+    &--patching {
+        opacity: 0.9;
+        pointer-events: none;
+    }
+    &__select--button {
+        background: $color-primary;
+        color: $color-dark;
+        display: block;
+        border-radius: $border-radius;
+        border: none;
+        padding: $padding-half $padding;
+        outline: none !important;
+        cursor: pointer;
+        transition: .3s;
+        width: 100%;
+        &:hover{
+            opacity: 0.8;
+            color: $color-dark;
+        }
+    }
+}
+
+@media (max-width: 900px){
+    .sdAddress {
+        &__wrapper{
+            width: 100%;
+        }
+        &__mapImage {
+
+            width: 100px !important;
+            height: 100px !important;
+            border-radius: 50px;
+            flex-basis: 100px;
+        }
+        &__pointOnMap {
+            height: 100px;
+            width: 100px;
+            background-size: 25px;
+
+        }
+    }
+}
